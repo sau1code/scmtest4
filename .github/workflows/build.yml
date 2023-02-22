@@ -61,7 +61,7 @@ jobs:
      - name: Flutter get
        uses: subosito/flutter-action@v1.3.2
        with:
-         flutter-version: '1.17.5'
+         flutter-version: '3.7.3'
      - run: flutter pub get
 
 #build and sign the ipa
