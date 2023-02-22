@@ -60,7 +60,7 @@ jobs:
 #set env
      - name: Set environment variables
        env:
-         FLUTTER_HOME: ${{ env.FLUTTER_HOME }}
+         FLUTTER_HOME: /opt/flutter
     
 #install flutter
      - name: Flutter get
