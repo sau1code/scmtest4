@@ -68,9 +68,9 @@ jobs:
 
       # Install Flutter
       - name: Install Flutter
-        uses: subosito/flutter-action@v1.6.3
+        uses: subosito/flutter-action@v2
         with:
-          flutter-version: '2.8.1'
+          flutter-version: '3.7.3'
 
       # Get the dependencies
       - name: Get Dependencies
