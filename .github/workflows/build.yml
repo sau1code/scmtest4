@@ -56,11 +56,6 @@ jobs:
        run: |
          keychain initialize
          keychain add-certificates --certificate ~/Library/MobileDevice/Certificates/certificate.p12 --certificate-password ${{ secrets.cert_password }}
-
-#set env
-     - name: Set environment variables
-       env:
-        FLUTTER_HOME: ${{ env.FLUTTER_HOME }}
     
 #install flutter
      - name: Flutter get
