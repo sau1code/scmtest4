@@ -56,20 +56,12 @@ jobs:
        run: |
          keychain initialize
          keychain add-certificates --certificate ~/Library/MobileDevice/Certificates/certificate.p12 --certificate-password ${{ secrets.cert_password }}
-<<<<<<< HEAD
-=======
-
-#set env
-     - name: Set environment variables
-       env:
-         FLUTTER_HOME: ${{ env.FLUTTER_HOME }}
->>>>>>> origin/master
     
 #install flutter
      - name: Flutter get
-       uses: subosito/flutter-action@v1.3.2
+       uses: subosito/flutter-action@v2
        with:
-         flutter-version: '1.17.5'
+         flutter-version: '3.0.5'
      - run: flutter pub get
 
 #build and sign the ipa
@@ -84,8 +76,4 @@ jobs:
        with:
         name: adhoc-ipa
         # Path to the release files
-<<<<<<< HEAD
         path: build/ios/ipa/*.ipa
-=======
-        path: build/ios/ipa/*.ipa
->>>>>>> origin/master
