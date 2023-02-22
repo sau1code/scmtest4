@@ -81,8 +81,4 @@ jobs:
        with:
         name: adhoc-ipa
         # Path to the release files
-<<<<<<< HEAD
         path: build/ios/ipa/*.ipa
-=======
-        path: build/ios/ipa/*.ipa
->>>>>>> origin/master
