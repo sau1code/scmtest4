@@ -1,5 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.scm_test">
+    package="com.example.scmtest3">
    <application
         android:label="scm_test"
         android:name="${applicationName}"
