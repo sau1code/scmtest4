@@ -1,13 +1,15 @@
+
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:provider/provider.dart';
-import 'package:scm_test/models/text.dart';
-import 'package:scm_test/screens/announcement/announcement.dart';
-import 'package:scm_test/screens/chatbot/chatbot.dart';
-import 'package:scm_test/screens/home/components/drawer.dart';
-import 'package:scm_test/screens/home/components/navigationbar.dart';
-import 'package:scm_test/screens/overview/overview.dart';
-import 'package:scm_test/screens/profile/profile.dart';
+
+import '../../models/text.dart';
+import '../announcement/announcement.dart';
+import '../chatbot/chatbot.dart';
+import '../overview/overview.dart';
+import '../profile/profile.dart';
+import 'components/drawer.dart';
+import 'components/navigationbar.dart';
 
 final GlobalKey<ScaffoldState> _scaffoldKey = GlobalKey<ScaffoldState>();
 

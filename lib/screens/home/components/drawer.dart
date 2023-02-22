@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:scm_test/common/constants.dart';
 
 class HomeDrawer extends StatelessWidget {
   const HomeDrawer({

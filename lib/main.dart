@@ -1,10 +1,12 @@
+
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:provider/provider.dart';
-import 'package:scm_test/common/constants.dart';
-import 'package:scm_test/common/router.dart';
-import 'package:scm_test/models/text.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+import 'common/constants.dart';
+import 'common/router.dart';
+import 'models/text.dart';
 
 
 

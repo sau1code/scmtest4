@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
-import 'package:scm_test/screens/home/home_screen.dart';
-import 'package:scm_test/screens/login/login_screen.dart';
-import 'package:scm_test/screens/overview/pending_order/pending_order.dart';
-import 'package:scm_test/screens/overview/purchase_order/purchase_order.dart';
-import 'package:scm_test/screens/overview/purchase_requisition/purchase_requisition.dart';
+
+import '../screens/home/home_screen.dart';
+import '../screens/login/login_screen.dart';
+import '../screens/overview/pending_order/pending_order.dart';
+import '../screens/overview/purchase_order/purchase_order.dart';
+import '../screens/overview/purchase_requisition/purchase_requisition.dart';
 
 GoRouter router() {
   return GoRouter(
