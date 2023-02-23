@@ -19,7 +19,9 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so our job can access it
-     - uses: actions/checkout@v1
+     - uses: actions/checkout@v2
+       with: 
+          ref: ios
 
      - name: Create Folder for certificates and profiles
        run: |
@@ -56,12 +58,12 @@ jobs:
        run: |
          keychain initialize
          keychain add-certificates --certificate ~/Library/MobileDevice/Certificates/certificate.p12 --certificate-password ${{ secrets.cert_password }}
-
+    
 #set env
      - name: Set environment variables
        env:
          FLUTTER_HOME: /opt/flutter
-         APP_STORE_CONNECT_TEAM_ID: ${{ secrets.APP_STORE_CONNECT_TEAM_ID }}
+         APP_STORE_CONNECT_TEAM_ID: ${{ secrets.APP_STORE_CONNECT_TEAM_ID }}    
     
 #install flutter
      - name: Flutter get
