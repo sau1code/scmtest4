@@ -58,13 +58,7 @@ jobs:
        run: |
          keychain initialize
          keychain add-certificates --certificate ~/Library/MobileDevice/Certificates/certificate.p12 --certificate-password ${{ secrets.cert_password }}
-    
-#set env
-     - name: Set environment variables
-       env:
-         FLUTTER_HOME: /opt/flutter
-         APP_STORE_CONNECT_TEAM_ID: ${{ secrets.APP_STORE_CONNECT_TEAM_ID }}    
-    
+  
 #install flutter
      - name: Flutter get
        uses: subosito/flutter-action@v2
